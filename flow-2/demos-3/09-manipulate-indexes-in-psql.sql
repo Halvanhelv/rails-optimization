@@ -1,17 +1,17 @@
 # psql
-# \q - выйти
-# \x - расширенный expanded display
-# \d - вывести список таблиц
-# \d+ - с дополнительной информацией
-# \d table - описать таблицу
-# \d+ table - описать таблицу с дополнительной информацией
-# \timing - засекать и показывать время операций
-# \l - список баз данных
-# \l+ - споисок баз данных с дополнительной информацией
-# \e - открыть редактор для удобного редактирования запроса
+# \q - exit
+# \x - extended expanded display
+# \d - display list of tables
+# \d+ - with additional information
+# \d table - describe table
+# \d+ table - describe table with additional information
+# \timing - time and show operation duration
+# \l - list of databases
+# \l+ - list of databases with additional information
+# \e - open editor for convenient query editing
 # \? - help
-# \h - помощь по командам Postgres
-# \h alter table - помощь по alter table, например
+# \h - help with Postgres commands
+# \h alter table - help with alter table, for example
 
 CREATE TABLE experiments(
  id serial PRIMARY KEY,
@@ -33,7 +33,7 @@ END) || (random() * 100000000)::INTEGER model,
 END) broken
  FROM generate_series(1, 6) AS rows;
 
-# ~5 секунд на 1М записей
+# ~5 seconds per 1M records
 INSERT INTO experiments (model, cents, broken)
 SELECT
 (CASE (random() * 2)::INTEGER
@@ -69,7 +69,7 @@ create index on experiments (broken);
 -- --------+-----------------------+-------+--------+-------------+--------+-------------
 --  public | experiments_cents_idx | index | spajic | experiments | 108 MB |
 
-# >10 секунд на 1М записей
+# >10 seconds per 1M records
 INSERT INTO experiments (model, cents, broken)
 SELECT
 (CASE (random() * 2)::INTEGER
