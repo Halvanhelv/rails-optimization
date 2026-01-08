@@ -16,7 +16,7 @@ sh start.sh
 00 30 11 * * 1-5 - Mon-Fri at 11:30am
 ```
 
-Grafana Dashboard: `http://localhost:3003` # перенастроил с 80
+Grafana Dashboard: `http://localhost:3003` # reconfigured from 80
 Lighthouse Reports: `http://localhost:3000/reports`
 Browsertime Videos: `http://localhost:3001/reports`
 Chronograf against InfluxDB: `http://localhost:8888`

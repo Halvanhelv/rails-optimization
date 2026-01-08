@@ -9,4 +9,4 @@ pwmetrics http://example.com/ --json
 pwmetrics http://example.com/ --output-path='pathToFile/file.json'
 ```
 
-Есть возможность задать **expectations** для проверки их выполнения
+There is an option to set **expectations** to verify their fulfillment

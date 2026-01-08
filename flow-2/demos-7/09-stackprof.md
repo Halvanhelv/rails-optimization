@@ -16,14 +16,14 @@ stackprof --flamegraph tmp/test_prof/stack-prof-report-wall-raw-total.dump > tmp
 open file:///Users/spajic/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/stackprof-0.2.12/lib/stackprof/flamegraph/viewer.html?data=/Users/spajic/dev.to/tmp/test_prof/stack-prof-report-wall-raw-total.html
 ```
 
-## Беглый анализ Flamegraph
-Часто встречаются
+## Quick Flamegraph Analysis
+Frequently seen:
 - BacktraceCLeaner (?!)
 - ActiveRecord
-- Skylight (мониторинг)
-- timber (логи)
-- airbrake (ошибки)
-- database_cleaner (вероятно, не нужен)
+- Skylight (monitoring)
+- timber (logs)
+- airbrake (errors)
+- database_cleaner (probably not needed)
 
 ## Speedscope
 ```bash
@@ -33,8 +33,8 @@ SAMPLE=3 TEST_STACK_PROF=1 TEST_STACK_PROF_FORMAT=json rspec
 [TEST PROF INFO] StackProf JSON report generated: tmp/test_prof/stack-prof-report-wall-raw-total.json
 ```
 
-- 22% Времени GC
-- 13% Времени Sprockets::PathUtils#stat
+- 22% Time in GC
+- 13% Time in Sprockets::PathUtils#stat
 
 ## Profile boot
 
@@ -88,7 +88,7 @@ stackprof tmp/test_prof/stack-prof-report-wall-raw-total.dump --text --limit 30
 ```
 
 
-## Рискнём профилировать весь test-suite
+## Let's risk profiling the whole test-suite
 
 ```bash
 TEST_STACK_PROF=1 TEST_STACK_PROF_FORMAT=json rspec
@@ -96,7 +96,7 @@ TEST_STACK_PROF=1 TEST_STACK_PROF_FORMAT=json rspec
 
 - dump - 600Mb
 - json - 1000Mb
-- https://www.speedscope.app/ - падает, не может открыть
+- https://www.speedscope.app/ - crashes, can't open
 
 ```bash
 stackprof tmp/test_prof/stack-prof-report-wall-raw-total.dump --text --limit 30

@@ -2,13 +2,13 @@
 
 ```ruby
 gem 'rack-mini-profiler'
-# Дополнительные возможности
+# Additional features
 gem 'memory_profiler'
 gem 'stackprof', '>= 0.2.9'
 gem 'flamegraph'
 ```
 
-- `help` по возможностям http://busfor.dev.ru:3000/?pp=help
+- `help` for features http://busfor.dev.ru:3000/?pp=help
 
 
 ```ruby
@@ -29,16 +29,16 @@ Rack::MiniProfiler.config.storage_options = { :host => uri.host, :port => uri.po
 Rack::MiniProfiler.config.storage = Rack::MiniProfiler::RedisStore
 ```
 
-## Вопросы к rack-mini-profiler
+## Questions for rack-mini-profiler
 - How many SQL queries I am generating?
 - Total request time?
 - % of time in SQL?
 - DOMContentLoaded
-- Есть какие-то части страницы, которые занимают бОльшую часть времени?
+- Are there any parts of the page that take most of the time?
 
-По каждому пункту - можно ли убрать запрос / закешировать?
+For each item - can the query be removed / cached?
 
-## Возможности профилирования
+## Profiling features
 - http://localhost:3000/?pp=flamegraph (look at the legend!)
 - http://localhost:3000/?pp=profile-gc
 - http://localhost:3000/?pp=profile-memory

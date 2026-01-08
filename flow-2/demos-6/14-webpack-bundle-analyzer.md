@@ -13,4 +13,4 @@ environment.plugins.append(
 );
 ```
 
-bin/webpack-dev-server -> открывается отчёт BundleAnalyzer
+bin/webpack-dev-server -> opens BundleAnalyzer report

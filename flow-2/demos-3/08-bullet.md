@@ -1,6 +1,6 @@
 # bullet
 
-Очень ценный инструмент! Главное настроить работу с ним так, чтобы не начать его игнорить.
+A very valuable tool! The main thing is to set up work with it so that you don't start ignoring it.
 
 ```ruby
 # config/environments/development.rb

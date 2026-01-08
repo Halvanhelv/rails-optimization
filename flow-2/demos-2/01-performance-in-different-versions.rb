@@ -1,5 +1,5 @@
 # Add simple time benchmark
-# Между какими версиями произошёл скачок производительности?
+# Between which versions did the performance jump occur?
 require 'benchmark'
 
 ROWS = 100_000

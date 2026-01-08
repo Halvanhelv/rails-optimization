@@ -1,7 +1,7 @@
 # TagProf
 
-## HTML Отчёт c круговой диаграммой по тегам спеков
+## HTML Report with pie chart by spec tags
 TAG_PROF=type TAG_PROF_FORMAT=html rspec
 
-## Комбинация с EventProf
+## Combination with EventProf
 TAG_PROF=type TAG_PROF_EVENT=sql.active_record rspec

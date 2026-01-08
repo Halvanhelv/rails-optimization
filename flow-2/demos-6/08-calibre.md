@@ -10,11 +10,11 @@ https://calibreapp.com/
 - And lots more!
 
 ## Features
-Ограниченное разнообразие в географии
-Test Profiles - Возможность настройки девайса и сети клиента
+Limited geographic diversity
+Test Profiles - Ability to configure client device and network
 Budgets: https://calibreapp.com/busfor/busfor/metrics/firstRender
 Lighthouse results
-CLI, можно выгрузить метрики, запустить чек, встроить в CI
+CLI, can export metrics, run checks, integrate into CI
 
 ## docs
 https://calibreapp.com/docs

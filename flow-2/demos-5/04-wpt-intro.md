@@ -1,12 +1,12 @@
 # WebPageTest Intro
 
 ## Features
-- Общий вид главного экрана, основные настройки
+- Overview of main screen, basic settings
   - Label
-- Запуск на примере dev.to
-- Основные показатели на главной странице, SpeedIndex
+- Run on dev.to example
+- Main indicators on the main page, SpeedIndex
 - Badges lead to Performance review tab
   - Lighthouse badge leads to Lighthouse
 - Waterfall!
-  - Бледные/насыщенные цвета
-  - Connection view внизу Waterfall
+  - Light/dark colors
+  - Connection view at bottom of Waterfall

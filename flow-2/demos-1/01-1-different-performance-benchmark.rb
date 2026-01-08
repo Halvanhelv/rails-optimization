@@ -1,7 +1,7 @@
-# Долгая конкатенция строк
-# Простейший benchmark
-# Запустить в ruby 2.0
-# Запустить в ruby 2.6
+# Long string concatenation
+# Simple benchmark
+# Run in ruby 2.0
+# Run in ruby 2.6
 # rbenv shell 2.0.0-p648
 # rbenv shell 2.6.3
 require 'benchmark'

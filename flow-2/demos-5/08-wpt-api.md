@@ -12,7 +12,7 @@ https://www.webpagetest.org/runtest.php?f=json&k=your.key&url=http://dev.to
 
 https://www.webpagetest.org/jsonResult.php?test=190822_11_ed141141270b6476032538b2092cc1be
 
-В ответ - огромный json с результатами теста (см. report json)
+In response - a huge json with test results (see report json)
 
 
 ## API Documentation

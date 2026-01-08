@@ -1,8 +1,8 @@
 https://github.com/spajic/performance-ci-demo/
 
-Статус билда в travis - passing: https://travis-ci.com/spajic/performance-ci-demo
+Build status in travis - passing: https://travis-ci.com/spajic/performance-ci-demo
 
-В `budget.json` задан бюджет на общее кол-во запросов
+In `budget.json` the budget for total request count is defined
 
 ```json
 {
@@ -33,7 +33,7 @@ after_success:
   - yarn run lh -- --perf=90 https://dev.to
 ```
 
-Сделаем PR c уменьшением бюджета - получим failed build
+Let's make a PR with reduced budget - we'll get a failed build
 
 ## github actions
 https://github.com/spajic/performance-ci-demo/actions

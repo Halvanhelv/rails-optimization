@@ -37,11 +37,11 @@ class WebMockNetBufferedIO < BufferedIO
 end
 ```
 
-## оптимизация
-Уберём блок с if RUBY_VERSION в нашей версии гема.
+## optimization
+Remove block with if RUBY_VERSION in our version of the gem.
 
-WebMockNetBufferedIO выпал из топа, стало побыстрее
+WebMockNetBufferedIO dropped from top, got faster
 
-Теперь его BacktraceClean вызывает HoneyComb!
+Now BacktraceClean is called by HoneyComb!
 
-Убираем HoneyComb ----> Полностью выбили BacktraceCleaner из топа
+Remove HoneyComb ----> Completely knocked BacktraceCleaner from top

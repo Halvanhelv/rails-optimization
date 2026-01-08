@@ -50,7 +50,7 @@ Running rspec via `rake parallel:spec[3]`
 ...
 336s
 
-# Повторный вызов с надеждой на балансировку через статистику
+# Second call hoping for balancing via statistics
 rake test:run
 Running rspec via `rake parallel:spec[3]`
 3 processes for 255 specs, ~ 85 specs per process
@@ -60,7 +60,7 @@ Running rspec via `rake parallel:spec[3]`
 ...
 287s
 
-# Попробуем в 4 потока
+# Let's try in 4 threads
 rake test:run
 Running rspec via `rake parallel:spec[4]`
 4 processes for 255 specs, ~ 63 specs per process
@@ -81,5 +81,5 @@ spec/features/comments/user_views_a_comment_spec.rb:4.667678999947384
 ...
 ```
 
-## Выводы
-В 3 потока получается примерно так же быстро, как в 4, но компьютер при этом более отзывчивый.
+## Conclusions
+With 3 threads it's about as fast as with 4, but the computer is more responsive.

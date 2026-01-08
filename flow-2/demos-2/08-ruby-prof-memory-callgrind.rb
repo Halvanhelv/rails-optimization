@@ -4,7 +4,7 @@
 require 'ruby-prof'
 require_relative 'work_method.rb'
 
-# На этот раз профилируем не allocations, а объём памяти!
+# This time we profile not allocations, but memory usage!
 RubyProf.measure_mode = RubyProf::MEMORY
 
 result = RubyProf.profile do

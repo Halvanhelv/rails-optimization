@@ -29,5 +29,5 @@ logData 1
 submitForm  name=search
 ```
 
-### Документация скриптинга WebPageTest
+### WebPageTest Scripting Documentation
 https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting

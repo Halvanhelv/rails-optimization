@@ -20,4 +20,4 @@ FPROF=1 rspec spec/requests/internal_users_spec.rb
 FPROF=flamegraph rspec
 ```
 
-Основной каскад в dev.to: User -> Identity
+Main cascade in dev.to: User -> Identity

@@ -1,8 +1,8 @@
 # PgHero
 
-## Варианты установки
+## Installation options
 
-Возможна установка через
+Installation available via
 - Rails Engine
 - Docker
 - Linux package
@@ -12,10 +12,10 @@ docker run -ti -e DATABASE_URL=postgres://spajic@host.docker.internal:5432/Pract
 open localhost:8080
 ```
 
-## Использование
-PgHero сам предлагает инструкции по своей дальнейшей настройке.
+## Usage
+PgHero itself offers instructions for its further configuration.
 
-В частности, для статистики по запросам надо добавить строки в конец `/usr/local/var/postgres/postgresql.conf`:
+In particular, for query statistics, you need to add lines to the end of `/usr/local/var/postgres/postgresql.conf`:
 
 ```
 shared_preload_libraries = 'pg_stat_statements'

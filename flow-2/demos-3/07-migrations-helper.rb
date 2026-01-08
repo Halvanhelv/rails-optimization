@@ -1,5 +1,5 @@
-# Хелпер для миграций по добавлению столбца с дефолтным значением
-# Also, see https://github.com/ilyakatz/data-migrate для миграций данных
+# Helper for migrations to add column with default value
+# Also, see https://github.com/ilyakatz/data-migrate for data migrations
 module MigrationsHelper
   # Usage:
   #   include MigrationsHelper

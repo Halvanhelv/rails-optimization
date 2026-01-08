@@ -10,4 +10,4 @@ Js Errors
 Browsers
 Geo
 
-В NewRelic можно пушить кастомные метрики!
+You can push custom metrics to NewRelic!

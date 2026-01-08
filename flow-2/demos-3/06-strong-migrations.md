@@ -1,8 +1,8 @@
 # StrongMigrations
 
-Отличный инструмент, предотвращающий опасные миграции.
+An excellent tool that prevents dangerous migrations.
 
-И заодно отличная база знаний по этим опасным миграциям.
+And also an excellent knowledge base on these dangerous migrations.
 
 ```ruby
 class AddIndexOnPublishedToArticles < ActiveRecord::Migration[5.1]
@@ -27,10 +27,10 @@ end
 
 ```ruby
 # config/initializers/strong_migrations.rb
-# Gem был добавлен 2018.04.06 и не должен влиять на старые миграции.
+# Gem was added 2018.04.06 and should not affect old migrations.
 StrongMigrations.start_after = 20180406000000
 
-# Автоматически Выполнять analyze таблицы после добавления индекса
+# Automatically run analyze on table after adding index
 StrongMigrations.auto_analyze = true
 
 # Tell fuckup story about index removal!

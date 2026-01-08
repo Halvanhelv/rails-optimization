@@ -4,13 +4,13 @@
 rspec --profile
 ```
 
-Можно в принципе ту же информацию взять из лога `parallel_test`, не в таком удобном виде, зато быстрее.
+You can in principle get the same information from `parallel_test` log, not in such a convenient form, but faster.
 
 ```
 Top 10 slowest examples (71.59 seconds, 12.1% of total time):
   Reading list without tags when large readinglist shows the large reading list
     12.89 seconds ./spec/features/user_views_a_reading_list_spec.rb:20
-  Reading list without tags when large readinglist shows the large readinglist after user clicks the show more button
+  Reading list without tags when large readinglist shows the large reading list after user clicks the show more button
     12.34 seconds ./spec/features/user_views_a_reading_list_spec.rb:25
   internal/users when deleting user raises a 'record not found' error after deletion
     6.4 seconds ./spec/controllers/internal_users_controller_spec.rb:89
@@ -55,7 +55,7 @@ Finished in 9 minutes 49 seconds (files took 11.33 seconds to load)
 ```
 
 
-## Лог parallel_test
+## parallel_test log
 ```
 spec/decorators/comment_decorator_spec.rb:0.4910280001349747
 spec/features/articles/user_visits_articles_by_tag_spec.rb:28.241394999902695

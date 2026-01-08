@@ -1,11 +1,11 @@
 ## remove skylight
-Ушёл из отчётов, стало чуть быстрее, в пределах погрешности
+Removed from reports, got a bit faster, within margin of error
 
 ## remove airbrake
-То же самое
+Same thing
 
 ## remove timber
-То же самоме
+Same thing
 
-## Вывод
-В flamegraph их много не потому, что они занимают много времени, а потому что встречаются в начале стека
+## Conclusion
+They show up a lot in flamegraph not because they take a lot of time, but because they appear at the beginning of the stack

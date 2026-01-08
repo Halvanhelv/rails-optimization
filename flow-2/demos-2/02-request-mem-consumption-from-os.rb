@@ -1,4 +1,4 @@
-# Запрос кол-ва используемой памяти (RSS) у ОС
+# Requesting memory usage (RSS) from OS
 require 'benchmark'
 
 ROWS = 100_000
@@ -6,7 +6,7 @@ COLS = 10
 REPS = 1000
 
 # RSS - Resident Set Size
-# объём памяти RAM, выделенной процессу в настоящее время
+# amount of RAM memory currently allocated to the process
 def print_memory_usage
   "%d MB" % (`ps -o rss= -p #{Process.pid}`.to_i / 1024)
 end

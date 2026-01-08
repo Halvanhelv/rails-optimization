@@ -12,7 +12,7 @@ docker-compose up
 
 docker run --privileged --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:9.8.1-plus1 https://busfor.ru --gpsi.key your.gpsi.key --graphite.host host.docker.internal --verbose -n 3 --webpagetest.host webpagetest.org --webpagetest.key your.wpt.key --webpagetest.location Dulles_Edge --budget.configPath myBudget.json --budget.output json
 
-### Test AMP https://busfor.ru/автобусы/Киев/Львов/amp
+### Test AMP https://busfor.ru/buses/Kyiv/Lviv/amp
 docker run --privileged --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:9.8.1-plus1 https://busfor.ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81%D1%8B/%D0%9A%D0%B8%D0%B5%D0%B2/%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2/amp --gpsi.key your.gpsi.key --graphite.host host.docker.internal --verbose -n 3 --webpagetest.host webpagetest.org --webpagetest.key your.wpt.key --webpagetest.location Dulles_Edge --budget.configPath myBudget.json --budget.output json
 
 open index.html
@@ -60,7 +60,7 @@ docker run --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io https://www.s
 - https://www.sitespeed.io/documentation/sitespeed.io/scripting/
 - https://www.sitespeed.io/documentation/sitespeed.io/connectivity
 
-## Отчёты
+## Reports
 - Summary
 - Detailed Summary
 - Domains
@@ -84,9 +84,9 @@ docker run --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io https://www.s
 Connectivity and throttle via docker
 Emulate mobile device in chrome via command args
 
-Можно запускать на мобильном девайсе!
+Can run on mobile device!
 
-WebPageReplay - replay page locally, get rid of latency, убрать источник неопределённости из метрик, проще получать стабильные метрики для оптимизации/отлова регрессий
+WebPageReplay - replay page locally, get rid of latency, remove source of uncertainty from metrics, easier to get stable metrics for optimization/catching regressions
 
 https://www.sitespeed.io/documentation/sitespeed.io/webpagereplay/
 
@@ -104,7 +104,7 @@ need API key
 ## Performance budget
 https://www.sitespeed.io/documentation/sitespeed.io/performance-budget/
 
-Если запустить sitespeed.io с сконфигурированным бюджетом, он завершится с exit_status > 0, если не уложится в бюджет
+If you run sitespeed.io with configured budget, it will exit with exit_status > 0 if it doesn't fit within budget
 
 docker run --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:9.8.1 https://www.sitespeed.io/ --budget.configPath myBudget.json -b chrome -n 11
 
@@ -200,7 +200,7 @@ docker run --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:9.8.1 https:/
 ```
 
 ## Alerts
-Алерты по собранным данным удобно сделать средствами Grafana
+Alerts on collected data are convenient to set up using Grafana tools
 
 https://www.sitespeed.io/documentation/sitespeed.io/alerts/
 

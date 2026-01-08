@@ -6,7 +6,7 @@ COLS = 10
 REPS = 1000
 
 # RSS - Resident Set Size
-# объём памяти RAM, выделенной процессу в настоящее время
+# amount of RAM memory currently allocated to the process
 def print_memory_usage
   "%d MB" % (`ps -o rss= -p #{Process.pid}`.to_i / 1024)
 end
@@ -19,7 +19,7 @@ def print_object_space_count_objects
   puts "\ncount_objects: "
   pp ObjectSpace.count_objects
 
-  # Можем обойти все объекты, создынные в программе!
+  # We can iterate over all objects created in the program!
   # puts ObjectSpace.each_object.count
   # puts ObjectSpace.each_object(String) {|s| puts s}
 end

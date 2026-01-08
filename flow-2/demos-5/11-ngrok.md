@@ -1,7 +1,7 @@
 # NGrok
 - Test local application with NGrok!
 
-## Сокращаем feedback-loop с NGrok
+## Shortening feedback-loop with NGrok
 cd dev.to
 bin/startup
 ./ngrok http 3000

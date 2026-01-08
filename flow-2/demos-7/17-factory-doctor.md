@@ -1,6 +1,6 @@
 # Factory Doctor
 
-Может дать подсказки о неоптимальных вещах типа `create` вместо `build_stubbed`
+Can give hints about non-optimal things like `create` instead of `build_stubbed`
 
 ```bash
 FDOC=1 rspec spec/controllers/internal_users_controller_spec.rb
@@ -28,10 +28,10 @@ GeneratedImage (./spec/labor/generated_image_spec.rb:3)
   returns article social image (./spec/labor/generated_image_spec.rb:18) – 3 records created, 00:00.147
   creates various generated images of different title lengths (./spec/labor/generated_image_spec.rb:25) – 3 records created, 00:00.138
 
-LanguageDetector (./spec/labor/language_detector_spec.rb:3)
+ LanguageDetector (./spec/labor/language_detector_spec.rb:3)
   returns language (./spec/labor/language_detector_spec.rb:7) – 3 records created, 00:00.137
 
-MailchimpBot (./spec/labor/mailchimp_bot_spec.rb:13)
+ MailchimpBot (./spec/labor/mailchimp_bot_spec.rb:13)
   returns false if user isnt a sustaining member (./spec/labor/mailchimp_bot_spec.rb:86) – 2 records created, 00:00.122
   unsubscribes the user from the weekly newsletter (./spec/labor/mailchimp_bot_spec.rb:120) – 2 records created, 00:00.070
 

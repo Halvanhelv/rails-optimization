@@ -1,14 +1,14 @@
 # http://localhost:3000/?pp=help
 
-# “Rack::MiniProfiler.config.storage = Rack::MiniProfiler::MemoryStore”
+# "Rack::MiniProfiler.config.storage = Rack::MiniProfiler::MemoryStore"
 #
 # How many SQL queries I am generating?
 # Total request time?
 # % of time in SQL?
 # DOMContentLoaded
-# Есть какие-то части страницы, которые занимают бОльшую часть времени?
+# Are there any parts of the page that take most of the time?
 
-# По каждому пункту - можно ли убрать запрос / закешировать?
+# For each item - can the query be removed / cached?
 
 # http://localhost:3000/?pp=flamegraph
 # look at the legend!

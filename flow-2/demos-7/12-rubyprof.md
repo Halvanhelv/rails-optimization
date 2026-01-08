@@ -1,8 +1,8 @@
 # ruby-prof
 
-## Запуск в глобальном режиме
+## Running in global mode
 
-можем указать принтер в `TEST_RUBY_PROF`
+can specify printer in `TEST_RUBY_PROF`
 
 `flat_printer` is default
 
@@ -36,10 +36,10 @@ Sort by: self_time
 
 
 ## call_stack
-html report с возможностью свернуть/развернуть
+html report with ability to collapse/expand
 
 ## graph_html
-html табличка с callers и calllees
+html table with callers and callees
 
 ## call_tree
 qcachegrind report

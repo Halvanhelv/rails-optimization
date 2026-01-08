@@ -5,6 +5,6 @@
 - config in `/usr/local/var/postgres/postgresql.conf`
 
 ## Usage
-- подать нагрузку на приложение
-- сгенерить отчёт по логам: `./pgbadger /usr/local/var/postgres/log/postgresql-2019-03-29_213138.log`
+- apply load to the application
+- generate report from logs: `./pgbadger /usr/local/var/postgres/log/postgresql-2019-03-29_213138.log`
 - `open index.html`
